@@ -1,0 +1,23 @@
+<h3 class="text-center">Employee Add</h3>
+
+<div>
+     <!-- <p>
+        Eid: 
+        <input [(ngModel)]="employeeModel.employeeId" type="text"  name="employeeId"/>
+    </p>-->
+    <p>
+        Firstname:
+        <input  [(ngModel)]="Firstname" type="text" ngModel maxlength="10" name="employeeFirstName"/>
+    </p>
+    <p>
+        Lastname:
+        <input  [(ngModel)]="Lastname" type="text" ngModel maxlength="10" name="employeeLastName"/>
+    </p>
+    
+    <p>
+        Salary:
+        <input  [(ngModel)]="employeeModel.employeeSalary" type="text" name="employeeSalary" />
+    </p>
+
+    <button class="btn btn-primary" (click)="save()">Add</button>
+</div>
